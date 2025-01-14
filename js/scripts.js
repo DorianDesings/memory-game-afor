@@ -26,10 +26,15 @@ const triesElement = document.getElementById('tries');
 
 const animalsImages = ['bird', 'bird', 'cat', 'cat', 'elephant', 'elephant', 'horse', 'horse', 'lion', 'lion', 'squirrel', 'squirrel'];
 
+// Primera imagen que seleccionas
 let imageA = null;
+// Segunda imagen que seleccionas
 let imageB = null;
+// Referencia para volver a ocultar las imágenes cuando fallas
 let timeoutId = null;
+// Variable para controlar si puedes hacr click o no (evita que puedas seleccionar más de 2 imágenes seguidas)
 let canPlay = true;
+// Número de intentos
 let tries = 0;
 
 const shuffleAnimals = () => {
