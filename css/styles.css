@@ -1,0 +1,12 @@
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}
