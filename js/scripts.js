@@ -71,6 +71,7 @@ const checkImages = (imageName, domImage) => {
     imageB = { name: imageName, domReference: domImage };
     // Evitamos que se pueda seleccionar una tercera imagen hasta comprobar si coinciden
     canPlay = false;
+    // Aumentamos el número de intentos
     tries++;
     printTries();
   }
@@ -84,6 +85,7 @@ const checkImages = (imageName, domImage) => {
 
   // Si el nombre no coincide reseteamos el backgroundImage de todos los elementos que no estén marcados como correctos
   if (imageA.name !== imageB.name) {
+    // Lo hago con un timeout para que te de tiempo a ver la imagen y no se resetee automáticamente
     timeoutId = setTimeout(hideImages, 1000);
   }
 
