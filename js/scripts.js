@@ -55,6 +55,7 @@ const printTries = () => {
 };
 
 const hideImages = () => {
+  //con esto recorres todos los hijos y les quitas el background a todos los que no estén marcados como correctos.
   [...gameContainerElement.children].forEach(child => {
     if (!child.dataset.correct) child.style.backgroundImage = '';
   });
