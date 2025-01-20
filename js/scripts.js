@@ -112,6 +112,7 @@ const showCardImage = (card, index) => {
 shuffleAnimals();
 
 gameContainerElement.addEventListener('click', event => {
+  // Nunca se mete lógica reutilizable dentro de un evento porque te cargas la reutilización
   // Si el click no ha sido en una tarjeta, corto la ejecución
   if (!event.target.classList.contains('card')) return;
   // Obtener el número de hijo para asociarlo con el indice del array, 0,1,2,3...
