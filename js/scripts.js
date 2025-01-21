@@ -106,7 +106,7 @@ const showCardImage = (card, index) => {
   // animalsImages[index] -> La imagen del array
   // gameContainerElement.children[index] -> El elemento del DOM que corresponde a esa imagen
 
-  card.style.backgroundImage = `url(../assets/images/${animalsImages[index]}.jpg)`;
+  card.style.backgroundImage = `url(./assets/images/${animalsImages[index]}.jpg)`;
   checkImages(animalsImages[index], gameContainerElement.children[index]);
 };
 
